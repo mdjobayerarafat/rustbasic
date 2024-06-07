@@ -16,5 +16,10 @@ impl Solution {
             result.push(word1.chars().nth(i).unwrap());
             i += 1;
         }
+        while i < word2.len() {
+            result.push(word2.chars().nth(j).unwrap());
+            j += 1;
+        }
+        result
     }
 }
